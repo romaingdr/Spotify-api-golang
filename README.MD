@@ -26,7 +26,3 @@ Accédez à l'interface via votre navigateur :
 
 - Accedez à ```http://localhost:8080/album/jul``` pour avoir accès aux albums de JUL
 - Accedez à ```http://localhost:8080/track/sdm``` pour avoir accès au morceau "Bolide allemand" de SDM
-
-![index site](https://imgur.com/a/WzknSVu)
-
-![index site](https://imgur.com/a/ivC1Rsr)
