@@ -126,8 +126,6 @@ func getSoundInfo(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Println("URL de l'image de l'album:", soundInfo.Album.Images[0].URL)
-
 	err = tmpl.ExecuteTemplate(w, "sdm", soundInfo)
 	if err != nil {
 		log.Println("Erreur lors de l'exécution du template :", err)

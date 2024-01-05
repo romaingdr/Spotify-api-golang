@@ -13,7 +13,7 @@
         <p><strong>Artiste:</strong> {{ range .Artists }}{{ .Name }} {{ end }}</p>
         <p><strong>Date de sortie:</strong> {{ .Album.ReleaseDate }}</p>
         <p><strong>Album:</strong> {{ .Album.Name }}</p>
-        <p><strong>Lien pour écouter :</strong> <a href="{{ .ExternalURLs.Spotify }}" target="_blank">Ecouter 🎶</a></p>
+        <p><a href="{{ .ExternalURLs.Spotify }}" target="_blank">Ecouter 🎶</a></p>
         {{ range $index, $image := .Album.Images }}
             {{ if eq $index 1 }}
                 <img src="{{ $image.URL }}" alt="Image">
