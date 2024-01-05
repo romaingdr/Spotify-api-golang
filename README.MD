@@ -16,15 +16,28 @@ Executez le programme
 
 ```go run main.go```
 
+![image](photos/run.jpg)
+
 *(Le token d'accès à l'api spotify est automatiquement créé)*
 
 Accédez à l'interface via votre navigateur :
 
 ```http://localhost:8080```
 
+![image](photos/index.jpg)
+
+
 3) Routes disponibles
 
 - Accedez à ```http://localhost:8080/album/jul``` pour avoir accès aux albums de JUL
+
+![image](photos/jul.jpg)
+
 - Accedez à ```http://localhost:8080/track/sdm``` pour avoir accès au morceau "Bolide allemand" de SDM
 
-![image](photos/run.jpg)
+![image](photos/sdm.jpg)
+
+
+4) Les tracks de chaque album sont disponibles en cliquant sur ce dernier !
+
+![image](photos/tracks.jpg)
