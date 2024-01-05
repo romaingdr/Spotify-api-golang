@@ -1,0 +1,27 @@
+{{ define "jul" }}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Albums de JUL</title>
+        <link href="/static/jul.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1><a href="/" class="back-button">⬅️</a> Albums de JUL</h1>
+    <ul>
+        {{ range . }}
+            <li>
+                <strong>📜 Nom:</strong> {{ .Name }}<br>
+                <strong>🕐 Date de sortie:</strong> {{ .ReleaseDate }}<br>
+                <strong>🎶 Nombre de musiques:</strong> {{ .TotalTracks }}<br>
+                {{ range $index, $image := .Images }}
+                    {{ if eq $index 1 }}
+                        <img src="{{ $image.URL }}" alt="Image">
+                    {{ end }}
+                {{ end }}
+            </li>
+        {{ end }}
+    </ul>
+    </body>
+    </html>
+{{ end }}

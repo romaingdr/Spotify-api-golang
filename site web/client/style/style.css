@@ -1,0 +1,51 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px);
+    text-align: center;
+}
+
+.spotify-button {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 30px;
+}
+
+.spotify-button:hover {
+    background-color: #1DB954;
+}
+
+.spotify-button span {
+    color: white;
+}
+
+.spotify-button.jul {
+    background-color: #1DB954;
+}
+
+.spotify-button.sdm {
+    background-color: #1DB954;
+}

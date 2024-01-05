@@ -1,0 +1,26 @@
+{{define "sdm"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sound Details</title>
+        <link href="/static/sdm.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1><a href="/" class="back-button">⬅️</a>Détails de la musique</h1>
+    <div class="sound-details">
+        <h2>Bolide allemand</h2>
+        <p><strong>Artiste:</strong> {{ range .Artists }}{{ .Name }} {{ end }}</p>
+        <p><strong>Date de sortie:</strong> {{ .Album.ReleaseDate }}</p>
+        <p><strong>Album:</strong> {{ .Album.Name }}</p>
+        <p><strong>Lien pour écouter :</strong> <a href="{{ .ExternalURLs.Spotify }}" target="_blank">Ecouter 🎶</a></p>
+        {{ range $index, $image := .Album.Images }}
+            {{ if eq $index 1 }}
+                <img src="{{ $image.URL }}" alt="Image">
+            {{ end }}
+        {{ end }}
+
+    </div>
+    </body>
+    </html>
+{{end}}
