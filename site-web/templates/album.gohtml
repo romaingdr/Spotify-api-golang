@@ -1,0 +1,20 @@
+{{ define "album" }}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Details de l'album</title>
+        <link href="/static/album.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1><a href="/album/jul" class="back-button">⬅️</a>Pistes de l'album 💿 :</h1>
+    <ul>
+        {{ range . }}
+            <a href="https://open.spotify.com/intl-fr/track/{{ .Id }}" class="track-link">
+            <li>{{ .Name }}</li>
+            </a>
+        {{ end }}
+    </ul>
+    </body>
+    </html>
+{{ end }}

@@ -45,3 +45,9 @@ li:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease;
 }
+
+.album-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}

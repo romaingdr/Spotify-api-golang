@@ -10,6 +10,7 @@
     <h1><a href="/" class="back-button">⬅️</a> Albums de JUL</h1>
     <ul>
         {{ range . }}
+            <a href="/album/{{ .ID }}" class="album-link">
             <li>
                 <strong>📜 Nom:</strong> {{ .Name }}<br>
                 <strong>🕐 Date de sortie:</strong> {{ .ReleaseDate }}<br>
@@ -20,8 +21,10 @@
                     {{ end }}
                 {{ end }}
             </li>
+        </a>
         {{ end }}
     </ul>
     </body>
     </html>
 {{ end }}
+
