@@ -8,7 +8,7 @@ Ce dépôt contient un programme en Go pour interagir avec l'API Spotify afin d'
 
 Clonez ce dépôt :
 
-```git clone https://github.com/votre-utilisateur/spotify-api.git```
+```git clone https://github.com/romaingdr/Spotify-api-golang.git```
 
 2) Lancement du programme
 
